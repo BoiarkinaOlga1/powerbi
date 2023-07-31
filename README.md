@@ -2,6 +2,7 @@
 
 1.Boiarkina_CV - Designed the data model and all visuals from scratch.
 
+
 2. Netflix dashboard - Used the Query Editor in Power BI Desktop for data cleaning (dataset from https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
 3.Lakes_coverage - using data of maximum ice coverage data from NOAA’s Great Lakes Environmental Research Laboratory I answered the following questions:
