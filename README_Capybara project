@@ -1,0 +1,48 @@
+I created a database schema for wildlife data on capybaras. I designed tables to store information related to capybaras, their habitats, behaviors, and observations. 
+Then, I populated these tables with sample data to make the database functional and ready for analysis. All data .csv files as well as code .sql files are in this repository as well.
+
+Below is a schema for a Capybara Wildlife Database:
+
+1. Capybaras Table:
+   - Columns:
+     - capybara_id (Primary Key)
+     - name VARCHAR(255)
+     - birth_date DATE
+     - gender VARCHAR(10)
+   - Description: Stores information about individual Capybaras, including their names, birthdates, and genders.
+
+2. Habitats Table:
+   - Columns:
+     - habitat_id (Primary Key)
+     - habitat_name VARCHAR(255)
+     - description VARCHAR(255)
+     - latitude DECIMAL(10, 6)
+     - longitude DECIMAL(10, 6)
+   - Description: Contains data about the various habitats where Capybaras are found. Each habitat can have a name, description, and geographic coordinates (latitude and longitude).
+
+3. Behaviors Table:
+   - Columns:
+     - behavior_id (Primary Key)
+     - behavior_name VARCHAR(255)
+     - description VARCHAR(255)
+   - Description: Stores information about different behaviors exhibited by Capybaras, including their names and descriptions.
+
+4. Observations Table:
+   - Columns:
+     - capybara_id (Foreign Key referencing Capybaras Table)
+     - behavior_id (Foreign Key referencing Behaviors Table)
+     - habitat_id (Foreign Key referencing Habitats Table)
+     - observation_date DATE
+     - description VARCHAR(255)
+   - Primary Key: The primary key for the `Observations` table consists of a composite key made up of the following columns: `capybara_id` and `observations_date`.
+   - Description: Records individual observations of Capybaras, including which Capybara was observed, the behavior exhibited, the habitat where the observation occurred, the observation date, and any additional description.
+
+With this schema, one can perform various SQL queries and operations, such as:
+
+1. Retrieving a list of Capybaras observed in a particular habitat.
+2. Finding the most common behavior exhibited by Capybaras.
+3. Analyzing the distribution of Capybaras across different locations.
+4. Identifying Capybaras of a specific age group.
+5. Calculating the frequency of each behavior exhibited by Capybaras.
+6. Adding new observations as new data is collected.
+
