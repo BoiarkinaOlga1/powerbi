@@ -1,5 +1,5 @@
 I created a database schema for wildlife data on capybaras. I designed tables to store information related to capybaras, their habitats, behaviors, and observations. 
-Then, I populated these tables with sample data to make the database functional and ready for analysis. All data .csv files as well as code .sql files are in this repository as well.
+Then, I populated these tables with sample data to make the database functional and ready for analysis and analyzed them in Power BI, creating a dashboard. All data .csv files as well as code .sql files are in this repository as well.
 
 Below is a schema for a Capybara Wildlife Database:
 
